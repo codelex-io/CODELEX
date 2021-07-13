@@ -11,9 +11,27 @@ namespace Exercise6
             {
                 Console.Write("Enter as many digits as you want (only digits): ");
                 string input = Console.ReadLine();
-                int sum = input.ToCharArray().Select(item => Convert.ToInt32(item.ToString())).ToArray().Sum();
+                char[] inputCharArray = input.ToCharArray();
+                bool isDigits = true;
 
-                Console.WriteLine($"Sum of your entered numbers ir {sum}");
+                for(int i = 0; i < inputCharArray.Length; i++)
+                {
+                    if(!Char.IsDigit(inputCharArray[i]))
+                    {
+                        isDigits = false;
+                    }
+                }
+
+                if(isDigits)
+                {
+                    int sum = inputCharArray.Select(item => Convert.ToInt32(item.ToString())).ToArray().Sum();
+
+                    Console.WriteLine($"Sum of your entered numbers ir {sum}");
+                } else
+                {
+                    Console.WriteLine("Wrong input!!! Only digits allowed!");
+                }
+
                 Console.WriteLine("------------------------------------------------------------------------");
             }
         }
