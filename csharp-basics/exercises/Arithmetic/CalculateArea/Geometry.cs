@@ -1,26 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CalculateArea
 {
     public class Geometry
     {
-        public static double areaOfCircle(decimal radius)
+        public static double areaOfCircle(double radius)
         {
-            throw new NotImplementedException();
+            return Math.PI * radius * 2;
         }
 
-        public static double areaOfRectangle(decimal length, decimal width)
+        public static double areaOfRectangle(double length, double width)
         {
-            throw new NotImplementedException();
+            return length * width;
         }
 
-        public static double areaOfTriangle(decimal ground, decimal h)
+        public static double areaOfTriangle(double ground, double height)
         {
-            throw new NotImplementedException();
+           return ground* height * 0.5;
         }
     }
 }
