@@ -32,19 +32,18 @@ namespace Exercise5
                 if(inputToInt < 1 || inputToInt > 100)
                 {
                         Console.Write("Wrong input!!!\n");
-                } else
+                } 
+                else
                 {
                     if(inputToInt == randomNumber)
                     {
                         Console.WriteLine("You guessed it!  What are the odds?!?");
                     }
-
-                    if(inputToInt > randomNumber)
+                    else if(inputToInt > randomNumber)
                     {                  
                         Console.WriteLine($"Sorry, you are too high.  I was thinking of {randomNumber}.");
                     }
-
-                    if(inputToInt < randomNumber)
+                    else if(inputToInt < randomNumber)
                     {
                         Console.WriteLine($"Sorry, you are too low.  I was thinking of {randomNumber}.");
                     }
