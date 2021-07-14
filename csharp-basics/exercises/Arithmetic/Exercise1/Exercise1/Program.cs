@@ -6,7 +6,7 @@ namespace Exercise1
     {
         static bool CheckNumbers(int a, int b)
         {
-            return a == 15 || b == 15 || a + b == 15 || a - b == 15 || b - a == 15 ? true : false;
+            return a == 15 || b == 15 || a + b == 15 || a - b == 15 || b - a == 15;
         }
 
         static void Main(string[] args)
