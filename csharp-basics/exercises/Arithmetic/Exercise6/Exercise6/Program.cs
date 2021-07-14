@@ -21,16 +21,20 @@ namespace Exercise6
                     if(j % 3 == 0 && j % 5 == 0)
                     {
                         lineList.Add("CozaLoza");
-                    } else if(j % 3 == 0)
+                    } 
+                    else if(j % 3 == 0)
                     {
                         lineList.Add("Coza");
-                    } else if(j % 5 == 0)
+                    } 
+                    else if(j % 5 == 0)
                     {
                         lineList.Add("Loza");
-                    } else if(j % 7 == 0)
+                    } 
+                    else if(j % 7 == 0)
                     {
                         lineList.Add("Woza");
-                    } else
+                    } 
+                    else
                     {
                         lineList.Add(j.ToString());
                     }
