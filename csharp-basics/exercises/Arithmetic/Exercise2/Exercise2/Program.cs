@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Exercise2
 {
@@ -9,7 +9,8 @@ namespace Exercise2
             if(a % 2 == 0)
             {
                 Console.WriteLine("Even Number");
-            } else
+            } 
+            else
             {
                 Console.WriteLine("Odd Number");
             }
