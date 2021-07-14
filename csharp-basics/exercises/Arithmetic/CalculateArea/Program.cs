@@ -100,7 +100,6 @@ namespace CalculateArea
             string inputHeight = Console.ReadLine();
             double height = Convert.ToDouble(inputHeight);
 
-            // Display the triangle's area.
             Console.WriteLine("The triangle's area is "
                     + Geometry.areaOfRectangle(ground, height));
         }
